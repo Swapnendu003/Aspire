@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <link rel="stylesheet" href="prompt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <marquee behavior="" direction="left">
+            <h1>Welcome to Aspire Verse</h1>
+        </marquee>
+
+        <p>Please select your preferred language:</p>
+        <div class="language-buttons">
+            <button class="language-button" onclick="setLanguage('en')">English</button>
+            <button class="language-button" onclick="setLanguage('bn')">বাংলা</button>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                // Redirect to the English version of your website
+                window.location.href = "aspireverse.html";
+            } else if (lang === 'bn') {
+                // Redirect to the Bengali version of your website
+                window.location.href = "aspireversebengali.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
