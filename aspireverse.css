@@ -1,0 +1,184 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10px;
+        }
+        
+        .logo img {
+            height: 55px;
+            width: 55px;
+            margin: 5px 20px;
+        }
+        
+        .nav-links li {
+            display: inline-block;
+            margin: 3 rem;
+            padding: 2rem;
+        }
+        
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+            color: #ff9900;
+        }
+        
+        .ham {
+            display: none;
+        }
+        
+        .resp {
+            display: block;
+        }
+        
+        .resphide {
+            display: none;
+        }
+        
+        .resp ul li {
+            background: white;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            border: black;
+            border-width: 5px 5px;
+            border-radius: 15px;
+        }
+        
+        .resp ul li a {
+            color: #ff9900;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        
+        .responsive-button {
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        .heading {
+            display: flex;
+            /*font-size: 1.7em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;*/
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: wheat;
+            text-align: center;
+            font-family: 'Josefin Sans', sans-serif;
+            text-shadow: 0 0 50px black;
+        }
+        
+        .domain {
+            background-color: rgb(57, 56, 56);
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px black;
+            width: 350px;
+            height: 400px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .domain:hover {
+            transform: scale(1.1);
+        }
+        
+        .do .container {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+        }
+        
+        .content {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 100px;
+        }
+        
+        .domain-head {
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            color: white;
+            text-shadow: 0px 0px 25px white;
+            margin-top: 7px;
+        }
+        
+        .domain p {
+            color: white;
+            text-align: justify;
+            margin: 10px;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+        
+        button {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 15px;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px black;
+        }
+        
+        button:hover {
+            background-color: #ff9900;
+        }
+        
+        button a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        @media screen and (max-width: 775px) {
+            .ham {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width: 776px) {
+            .resp {
+                display: none;
+            }
+        }
