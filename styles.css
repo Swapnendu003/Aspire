@@ -412,12 +412,23 @@
   }
   
   /* Footer styles */
-  footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px 0;
-    text-align: center;
-    color: #fff;
-  }
+ .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.profile img {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px white;
+}
+
   .ham{
     display: none;
   }
